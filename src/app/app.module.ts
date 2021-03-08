@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ContenidoComponent } from './contenido/contenido.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
-      SidenavComponent
+      SidenavComponent,
+      ContenidoComponent
    ],
   imports: [
     BrowserModule,
