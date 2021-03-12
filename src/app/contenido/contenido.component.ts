@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RfxParallaxService } from 'rfx-parallax';
 export interface About {
   cols: number;
   rows: number;
@@ -11,9 +12,10 @@ export interface About {
 })
 export class ContenidoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rfxParallaxService: RfxParallaxService) { }
 
   ngOnInit(): void {
+    this.rfxParallaxService.initListeners();
   }
   about: About[] = [
     {text: 'En la Administración Estatal que preside el Gobernador Miguel Angel Riquelme Solis, la cobertura y calidad de la infraestructura es la base estructural para que nuestra sociedad sea más próspera e incluyente; reducir las desigualdades e incrementar las oportunidades de crecimiento para todos los coahuilenses en cada una de las regiones.', cols: 3, rows: 1},

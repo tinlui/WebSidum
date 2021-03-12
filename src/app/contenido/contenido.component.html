@@ -1,8 +1,9 @@
-<section class="parallax seccion" >
+<!-- <section class="parallax seccion" >
  <p>SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
  <h2>SIDUM</h2>
 </section>
-<section class="parallax seccion2" #seccion2>
+
+<section    class="parallax seccion2" #seccion2>
 
   <mat-grid-list cols="4" rowHeight="1:1">
     <mat-grid-tile  *ngFor="let item of about">
@@ -23,4 +24,53 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum
 </section>
 <section class="parallax" #seccion7>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
-</section>
+
+<!-- our parallax stuff-->
+<div class="container">
+  <div id="content">
+    <div style="width: 80%; margin-left: auto; margin-right: auto;">
+
+        <p class="subtitulo">SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
+        <h2 class="titulo">SIDUM</h2>
+      </div>
+    </div>
+  </div>
+<mat-divider></mat-divider>
+<div class="container" >
+  <div id="content">
+    <div appParallax [ratio]="0" id="amarillo">
+    <mat-grid-list cols="4" rowHeight="1:1">
+      <mat-grid-tile  *ngFor="let item of about">
+        <mat-card>
+          <p>{{item.text}}</p>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    </div>
+  </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="container" style="background-color: blueviolet;">
+    <div id="content">
+      <h2 class="semblanza">semblanza</h2>
+      </div>
+    </div>
+    <div class="container"  appParallax [ratio]="-1" id="rectangle" style="background-color: red;">
+      <div id="content" >
+        gestion
+        </div>
+      </div>
+      <div class="container" style="background-color: blueviolet;">
+        <div id="content">
+    enlaces
+          </div>
+        </div>
+<!-- <div appParallax [ratio]="-.1"  id="verde">
+  <div style="width: 80%; margin-left: auto; margin-right: auto;">
+
+
+</div>
+</div> -->
+
+
+<!-- <div appParallax [ratio]="0.9" id="rectangle"></div> -->
