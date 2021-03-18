@@ -26,52 +26,73 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
 
 <!-- our parallax stuff-->
-<div class="container">
-  <div id="content">
-    <div style="width: 80%; margin-left: auto; margin-right: auto;">
-
-        <p class="subtitulo">SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
-        <h2 class="titulo">SIDUM</h2>
-      </div>
-    </div>
-  </div>
-<mat-divider></mat-divider>
 <div class="container" >
   <div id="content">
-    <div appParallax [ratio]="0" id="amarillo">
-    <mat-grid-list cols="4" rowHeight="1:1">
-      <mat-grid-tile  *ngFor="let item of about">
-        <mat-card>
-          <p>{{item.text}}</p>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
-    </div>
-  </div>
-  </div>
-  <mat-divider></mat-divider>
-  <div class="container"   style=" background-color:   #BDAABD;">
-    <div id="content">
-      <h2 class="semblanza">semblanza</h2>
-      <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempore fuga alias eligendi. Soluta inventore porro atque quidem dolor eum cupiditate ipsam assumenda veritatis illo dolorem, cumque provident incidunt reiciendis?</p>
+    INICIO
       </div>
+  </div>
+
+<mat-divider></mat-divider>
+
+<div class="container" >
+  <div id="content">
+  </div>
+  BIENVENIDO
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="container"  >
+    <div id="content">
+      SEMBLANZA
     </div>
-    <div class="container"  appParallax [ratio]="1" id="rectangle" style="background-color: red;">
+    </div>
+
+    <div class="container" >
       <div id="content" >
-        gestion
+        GESTION
         </div>
       </div>
-      <div class="container" style="background-color: blueviolet;">
+
+      <div class="container" >
         <div id="content">
-    enlaces
+    ENLACES
           </div>
         </div>
-<!-- <div appParallax [ratio]="-.1"  id="verde">
-  <div style="width: 80%; margin-left: auto; margin-right: auto;">
+        <div class="container" >
+          <div id="content">
+      SLIDE
+            </div>
+          </div>
+          <div class="container" >
+            <div id="content">
+        COMUNICATE
+              </div>
+            </div>
 
-
+ <div appParallax [ratio]=".99"  id="verde">
+  <p class="subtitulo">SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
+  <h2 class="titulo">SIDUM</h2>
+ </div>
+ <div appParallax [ratio]="-0.09" id="rectangle">
+  <div class="container" >
+    <div id="content" >
+  <mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile  *ngFor="let item of about">
+      <mat-card>
+        <p>{{item.text}}</p>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
-</div> -->
+</div>
+ </div>
+ <div appParallax [ratio]=".99" id="amarillo">
+  <h2 class="semblanza">semblanza</h2>
 
 
-<!-- <div appParallax [ratio]="0.9" id="rectangle"></div> -->
+
+ </div>
+ <div appParallax [ratio]="-0.9" id="gestion">
+  <h2 class="semblanza">gestion</h2>
+ </div>
