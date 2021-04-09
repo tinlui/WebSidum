@@ -1,98 +1,102 @@
-<!-- <section class="parallax seccion" >
- <p>SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
- <h2>SIDUM</h2>
-</section>
-
-<section    class="parallax seccion2" #seccion2>
-
-  <mat-grid-list cols="4" rowHeight="1:1">
-    <mat-grid-tile  *ngFor="let item of about">
-      <mat-card>
-        <p>{{item.text}}</p>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</section>
-<section class="parallax" #seccion3>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
-</section>
-<section class="parallax" #seccion4>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
-</section>
-<section class="parallax" #seccion6>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
-</section>
-<section class="parallax" #seccion7>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam rem cum saepe, quisquam error assumenda corporis impedit nulla obcaecati tempore id itaque ipsum, excepturi cumque! Ipsum voluptate quo autem.
-
-<!-- our parallax stuff-->
-<div class="container" >
-  <div id="content">
-    INICIO
-      </div>
-  </div>
-
-<mat-divider></mat-divider>
-
-<div class="container" >
-  <div id="content">
-  </div>
-  BIENVENIDO
-  </div>
-
-  <mat-divider></mat-divider>
-
-  <div class="container"  >
-    <div id="content">
-      SEMBLANZA
-    </div>
-    </div>
-
-    <div class="container" >
-      <div id="content" >
-        GESTION
+ <div class="cont">
+	<div class="slider animation">
+    <div class="slide slide--1">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--1__text-wrapper">
+            <app-portada></app-portada>
         </div>
       </div>
-
-      <div class="container" >
-        <div id="content">
-    ENLACES
+    </div>
+    <div class="slide slide--2">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--2__text-wrapper">
+          <app-bienvenido></app-bienvenido>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--3">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--3__text-wrapper">
+         <app-semblanza></app-semblanza>
+      </div>
+      </div>
+    </div>
+    <div class="slide slide--4">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--4__text-wrapper">
+<app-mvv></app-mvv>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--5">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--5__text-wrapper">
+          <app-gestion></app-gestion>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--6">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--6__text-wrapper">
+          <div class="cont-enlaces">
+<div class="tarjetas">
+  <h4>Licencias</h4>
+  <a href="http://citas.coahuila.licenciamanejo.com">  <img src="/assets/img/licencias.png" mat-card-image></a>
+  <a href="MenuLicencias.html"><img src="/assets/img/guias.jpeg" mat-card-image></a>
+</div>
+<div class="tarjetas">
+  <h4>Transparencia</h4>
+  <a href="http://www.coahuilatransparente.gob.mx/articulos/ip_dependencia.cfm?dep=SUOP">
+   <img src="/assets/img/logotransparencia.jpg" mat-card-image></a>
+  <a href="http://www.coahuilatransparente.gob.mx/articulos/ip_dependencia.cfm?dep=SUOP">
+    <img src="/assets/img/transparencia.jpg" mat-card-image></a>
+</div>
+<div class="tarjetas">
+  <h4>Otros</h4>
+<a href="frTL.html"> <img src="/assets/img/licitacion.jpg" mat-card-image></a>
+ <a href="http://www.coahuilaseint.gob.mx/LogIn.html"><img src="/assets/img/crih.jpg" mat-card-image></a>
+</div>
           </div>
         </div>
-        <div class="container" >
-          <div id="content">
-      SLIDE
-            </div>
+      </div>
+    </div>
+    <div class="slide slide--7">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--7__text-wrapper">
+          <app-slider></app-slider>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide--8">
+      <div class="slide__dakbg slide--__darkbb">
+        <div class="slide__text-wrapper slide--8__text-wrapper">
+          <app-pie-pagina></app-pie-pagina>
+          <div class="directorio">
+            <span>Directorio</span>
           </div>
-          <div class="container" >
-            <div id="content">
-        COMUNICATE
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<ul class="nav">
+    <li data-target="1" class="nav__slide nav__slide--1 nav-active"></li>
+    <li data-target="2" class="nav__slide nav__slide--2"></li>
+    <li data-target="3" class="nav__slide nav__slide--3"></li>
+    <li data-target="4" class="nav__slide nav__slide--4"></li>
+    <li data-target="5" class="nav__slide nav__slide--5"></li>
+    <li data-target="6" class="nav__slide nav__slide--6"></li>
+    <li data-target="7" class="nav__slide nav__slide--7"></li>
+    <li data-target="8" class="nav__slide nav__slide--8"></li>
+  </ul>
 
- <div appParallax [ratio]=".99"  id="verde">
-  <p class="subtitulo">SECRETARÍA DE INFRAESTRUCTURA, DESARROLLO URBANO Y MOVILIDAD</p>
-  <h2 class="titulo">SIDUM</h2>
- </div>
- <div appParallax [ratio]="-0.09" id="rectangle">
-  <div class="container" >
-    <div id="content" >
-  <mat-grid-list cols="4" rowHeight="1:1">
-    <mat-grid-tile  *ngFor="let item of about">
-      <mat-card>
-        <p>{{item.text}}</p>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+<mat-list style="width: 25%;">
+  <mat-list-item> <button mat-raised-button> <i class="fab fa-facebook-f"></i></button></mat-list-item>
+  <mat-list-item> <button mat-raised-button color="accent"><i class="fab fa-twitter"></i></button> </mat-list-item>
+  <mat-list-item> <button mat-raised-button color="accent"><i class="fab fa-instagram"></i></button></mat-list-item>
+</mat-list>
+<div class="sticky"><img style="max-height: 180px; max-width: 230px;" src="/assets/img/COVID.jpg" alt=""></div>
 </div>
-</div>
- </div>
- <div appParallax [ratio]=".99" id="amarillo">
-  <h2 class="semblanza">semblanza</h2>
 
-
-
- </div>
- <div appParallax [ratio]="-0.9" id="gestion">
-  <h2 class="semblanza">gestion</h2>
- </div>
+<!--
+<div data-target='right' class="side-nav side-nav--right"></div>
+	<div data-target='left' class="side-nav side-nav--left"></div> -->

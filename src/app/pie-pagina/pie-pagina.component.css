@@ -1,0 +1,23 @@
+.content{
+  width: 70rem;
+  height: 33rem;
+  background-color: sandybrown;
+  left: 10rem;
+}
+.contacto{
+  display: block;
+  background-color: #8E9AAF;
+  max-width: 45rem;
+  align-self:flex-start;
+}
+.avisos{
+  position: absolute;
+bottom: 4rem;
+left: 25rem;
+}
+.mat-button{
+  background-color: #890620;
+  font-size: 1.5rem;
+  margin: .5rem;
+  color: #f5eccd;
+}

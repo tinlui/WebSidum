@@ -1,0 +1,47 @@
+.mySlides {display:none;
+}
+
+.display-left{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+
+}
+.display-right{
+  position: absolute;
+    top: 50%;
+    right: 30%;
+}
+.button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.black, .hover-black:hover {
+  color: #fff!important;
+  background-color: #000!important;
+}
+.content{
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 10rem;
+}
+.display-container {
+  position: relative;
+}
+img{
+  vertical-align: middle;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

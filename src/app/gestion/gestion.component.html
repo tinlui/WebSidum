@@ -1,0 +1,88 @@
+<div class="cont">
+  <div class="gestion-titulo">
+    <mat-card class="tarjeta-gestion">
+      <mat-card-title class="titulo1">Gestion</mat-card-title>
+      <mat-card-subtitle class="titulo2">Urbana</mat-card-subtitle>
+      <mat-card-content>
+        <p class="descripcion">La Coordinación General de Gestión Urbana y
+          Zonas Metropolitanastiene por objeto
+          promover el ordenamiento territorial,
+          urbano y metropolitano, así como la
+          protección y conservación
+          del patrimonio inmueble cultural,
+          de conformidad con las disposiciones aplicables</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="gestion-link">
+    <mat-accordion class="example-headers-align" multi >
+      <mat-expansion-panel [expanded]="step === 0"   (opened)="setStep(0)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Programas Planes y Declaratorias
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="example-button-row">
+          <a  mat-button color="warn"  href="#" target="_blank">Programas Estatales de Desarrollo Urbano y
+            Ordenamiento Territorial.</a>
+          <a  mat-button color="warn"  href="#" target="_blank"> Programas de desarrollo urbano metropolitano.</a>
+          <a  mat-button color="warn" href="#" target="_blank">Programas regionales de ordenamiento territorial.</a>
+          <a  mat-button color="warn" href="#" target="_blank">Programas parciales de centros históricos</a><br>
+          <a  mat-button color="warn" href="#" target="_blank"> Planes Directores de Desarrollo Urbano.</a>
+          <a mat-button color="warn" href="https://www.google.com/" target="_blank">Declaratorias de Zonas protegidas y centros
+            históricos. </a>
+        </div>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel  [expanded]="step === 1"  (opened)="setStep(1)" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Trámites
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div class="example-button-row">
+          <a mat-button  color="warn" href="#" target="_blank"> Registro de Directores responsables
+            y corresponsables de obra.
+          </a>
+          <a mat-button color="warn" href="#" target="_blank"> Derecho de preferencia.
+          </a><br>
+          <a mat-button  color="warn" href="#" target="_blank"> Registro de prestadores de servicios
+            en materia de impacto urbano.
+          </a>
+          <a mat-button  color="warn" href="#" target="_blank"> Impacto urbano
+          </a><br>
+
+          <a mat-button  color="warn" href="#" target="_blank">Verificación de congruencia de los
+            planes y programas de desarrollo urbano</a>
+        </div>
+      </mat-expansion-panel>
+
+
+      <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Normatividad de la Región Carbonífera
+            sobre asentamientos humanos y
+            protección de sus derechos.
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <div class="example-button-row">
+          <a mat-button color="warn" href="#" target="_blank"> Instrumentos relacionados con asentamientos
+            humanos en situación de riesgo por
+            su cercanía con actividades extractivas.
+          </a>
+          <a mat-button color="warn" href="#" target="_blank"> Planes y programas en materia de protección
+            de asentamientos humanos, ordenamiento territorial
+            y desarrollo urbano de la región carbonífera,
+            encaminados a la protección de los
+            derechos humanos al medio ambiente, vivienda y salud.</a>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </div>
+</div>

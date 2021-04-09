@@ -1,0 +1,26 @@
+.titulo {
+  right: 30rem;
+  text-shadow: #70677ea9 1px 0 10px;
+  color: #3d373d;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  line-height: 1rem;
+  font-size: 8rem;
+  transform: translate(45%, 70%);
+  position: absolute;
+  top: 60%;
+}
+.subtitulo {
+  top: 0;
+  right: 25rem;
+  text-shadow: #9584b3a9 2px 5px;
+  color: #3d373d;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  position: absolute;
+  transform: translate(40%, 30%);
+}

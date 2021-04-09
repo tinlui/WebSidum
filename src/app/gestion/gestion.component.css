@@ -1,0 +1,79 @@
+
+.cont{
+  display: grid;
+
+}
+
+.gestion-titulo{
+  grid-column: 1/ 2;
+  grid-row: 1 / 2;
+background-color: #8E9AAF;
+}
+mat-card.tarjeta-gestion{
+  background-color: #8E9AAF;
+  border: none;
+}
+
+.gestion-link{
+  grid-column:  2/ 2;
+  grid-row: 1/ 2;
+padding: 2rem;
+max-width: 550px;
+}
+
+.titulo1{
+font-size: 9rem;
+text-align: right;
+color:white;
+line-height: 9rem;
+padding-right: 1rem;
+font-weight: 700;
+}
+
+.titulo2{
+  font-size: 9rem;
+  text-align: right;
+  color: #11151c;
+  line-height: 7rem;
+padding-right: 2rem;
+  font-weight: 700;
+}
+
+.descripcion{
+text-align: justify;
+font-size: 1.5rem;
+padding-left: 4rem;
+width: 30rem;
+line-height: 2rem;
+padding-bottom: 6.5rem;
+color: #f5eccd;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+color: #4a4e69;
+font-weight: 600;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 30rem;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.mat-expansion-panel-header {
+  height: 4rem;
+  font-size: 1.5rem;
+}
+mat-expansion-panel{
+  background-color: #f5eccd;
+}

@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="contacto">
+    <h3>SIDUM</h3>
+    <h4>Contacto:</h4>
+    <p>
+
+    <span>  Teléfonos: (844) 698 1010 y 698 1000</span>
+  <span> De Lunes a Viernes de 9:00 a 16:00 hrs.</span>
+   <span>  o al Correo Electronico: buzonseint@coahuila.gob.mx</span>
+    <span>Blvd. Fundadores esquina Blvd. Centenario de Torreón C.P.25247 Centro de Gobierno, Planta Baja; Saltillo,
+      Coahuila.</span>
+    </p>
+  </div>
+  <div class="avisos">
+    <button mat-button [matMenuTriggerFor]="transporteMenu">Transporte</button>
+    <mat-menu #transporteMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Aviso de privacidad Simplificado</button>
+      <button mat-menu-item>Aviso de privacidad Integral</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="transparenciaMenu">Transparencia</button>
+    <mat-menu #transparenciaMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Aviso de privacidad Simplificado</button>
+      <button mat-menu-item>Aviso de privacidad Integral</button>
+    </mat-menu><button mat-button [matMenuTriggerFor]="licitacionMenu">Licitacion</button>
+    <mat-menu #licitacionMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Licitacion Concesion Terminales</button>
+    </mat-menu>
+  </div>
+
+</div>
+
