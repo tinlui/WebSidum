@@ -4,6 +4,21 @@
   background-color: sandybrown;
   left: 10rem;
 }
+h3{
+  padding-top: 2rem;
+  font-size: 5rem;
+  padding-left: 1rem;
+}
+h4{
+  font-size: 3rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+p{
+font-size: 1rem;
+line-height: 1.5rem;
+padding-left: 1rem;
+}
 .contacto{
   display: block;
   background-color: #8E9AAF;
